@@ -10,6 +10,8 @@
 	
 	<h3><?php echo $row->title; ?></h3>
 	<p><?php echo $row->body; ?></p>
+	
+	<p><?php echo anchor('blog/comments/'.$row->id, 'Comments')?></p>
 		
 	<hr />
 	
