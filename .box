@@ -1,0 +1,4 @@
+network_writable_dirs: []
+
+php_extensions: [mcrypt, mysqli, mysql, mbstring]
+php_display_errors: On
