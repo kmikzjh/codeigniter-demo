@@ -79,7 +79,7 @@ switch($_SERVER['HTTP_HOST'])
 $active_record = TRUE;
 
 // production
-$db['production']['hostname'] = "localhost;unix_socket=/tmp/mysql/leila.sock";
+$db['production']['hostname'] = "localhost:/tmp/mysql/leila.sock";
 $db['production']['username'] = "loraine";
 $db['production']['password'] = "EuGc64g5";
 $db['production']['database'] = "leila";
