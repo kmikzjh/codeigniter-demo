@@ -24,11 +24,17 @@ class Blog extends CI_Controller {
 	{
 		$data['title'] = "My Comment Title";
 		$data['heading'] = "My Comment Heading";
-		$data['query'] = $this->db->get('entries');
+		$this->db->where('entry_id', $this->uri->segment(3));
+		$data['query'] = $this->db->get('comments');
 		
 		$this->load->view('comment_view', $data);
 	}
 	
+	function comment_insert()
+	{
+		$this->db->insert('comments', $_POST);
+		
+		redirect('blog/comments/'.$_POST['entry_id']);
+	}
 }
-
 ?>
