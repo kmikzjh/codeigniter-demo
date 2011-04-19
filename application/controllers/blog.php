@@ -14,7 +14,7 @@ class Blog extends CI_Controller {
 	function index ()
 	{
 		$data['title'] = "My CodeIgnitor Blog on Pagoda";
-		$data['heading'] = "My Blog Heading";
+		$data['heading'] = "My CodeIgnitor Blog on Pagoda";
 		$data['query'] = $this->db->get('entries');
 		
 		$this->load->view('blog_view', $data);
