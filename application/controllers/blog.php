@@ -13,7 +13,7 @@ class Blog extends CI_Controller {
 	
 	function index ()
 	{
-		$data['title'] = "My Blog Title";
+		$data['title'] = "My CodeIgnitor Blog on Pagoda";
 		$data['heading'] = "My Blog Heading";
 		$data['query'] = $this->db->get('entries');
 		
