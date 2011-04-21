@@ -4,6 +4,6 @@ php_extensions: [mcrypt, mysqli, mysql, mbstring]
 php_display_errors: On
 
 permissions:
-   /phpMyAdmin :
+   /phpMyAdmin/* :
      - 24.116.177.210: allow
      - all: deny
