@@ -5,5 +5,5 @@ php_display_errors: On
 
 permissions:
    /phpMyAdmin :
-     - 127.0.0.1: allow
+     - 24.116.177.210: allow
      - all: deny
