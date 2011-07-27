@@ -33,16 +33,11 @@ else
 | it will fatal error.
 |--------------------------------------------------------------------------
 */
-switch($_SERVER['HTTP_HOST'])
-{
-    case '127.0.0.1':
-        define('SITE', 'development');
-    break;
-    
-    default:
-        define('SITE', 'production');
-    break;
-}
+
+if (isset($_SERVER['ENVIRONMENT']) && $_SERVER['ENVIRONMENT'] == 'PAGODA')
+    define('SITE', 'production');
+else
+    define('SITE', 'development');
 
 /*
 | -------------------------------------------------------------------
@@ -79,12 +74,13 @@ switch($_SERVER['HTTP_HOST'])
 $active_record = TRUE;
 
 // production
-$db['production']['hostname'] = "localhost:/tmp/mysql/leila.sock";
-$db['production']['username'] = "loraine";
-$db['production']['password'] = "EuGc64g5";
-$db['production']['database'] = "leila";
+$db['production']['hostname'] = "localhost:/tmp/mysql/tanja.sock";
+$db['production']['username'] = "akilah";
+$db['production']['password'] = "u91EayUR";
+$db['production']['database'] = "tanja";
 $db['production']['dbdriver'] = "mysql";
 $db['production']['dbprefix'] = "";
+$db['production']['active_r'] = TRUE;
 $db['production']['pconnect'] = TRUE;
 $db['production']['db_debug'] = TRUE;
 $db['production']['cache_on'] = FALSE;
@@ -106,7 +102,6 @@ $db['development']['cache_on'] = FALSE;
 $db['development']['cachedir'] = "";
 $db['development']['char_set'] = "utf8";
 $db['development']['dbcollat'] = "utf8_general_ci";
-
 
 // Check the configuration group in use exists, if not use the production
 $active_group = (defined('SITE') && array_key_exists(SITE, $db)) ? SITE : 'production';
