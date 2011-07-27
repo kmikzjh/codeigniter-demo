@@ -1,9 +1,0 @@
-network_writable_dirs: [application/cache, uploads]
-
-php_extensions: [mcrypt, mysqli, mysql, mbstring]
-php_display_errors: On
-
-permissions:
-   /phpMyAdmin/* :
-     - 24.116.177.210: allow
-     - all: deny
