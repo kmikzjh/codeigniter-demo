@@ -79,7 +79,7 @@ $db['production']['port'] = "3306";
 $db['production']['username'] = "arvilla";
 $db['production']['password'] = "EVXYRTcr";
 $db['production']['database'] = "codeigniter-demo";
-$db['production']['dbdriver'] = "mysql";
+$db['production']['dbdriver'] = "mysqli";
 $db['production']['dbprefix'] = "";
 $db['production']['active_r'] = TRUE;
 $db['production']['pconnect'] = TRUE;
@@ -88,9 +88,6 @@ $db['production']['cache_on'] = FALSE;
 $db['production']['cachedir'] = "";
 $db['production']['char_set'] = "utf8";
 $db['production']['dbcollat'] = "utf8_general_ci";
-
-print_r ($db['production']);
-exit;
 
 // development
 $db['development']['hostname'] = "localhost";
