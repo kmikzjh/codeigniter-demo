@@ -75,9 +75,9 @@ $active_record = TRUE;
 
 // production
 $db['production']['hostname'] = "tunnel.pagodabox.com";
-$db['production']['username'] = "arvilla";
-$db['production']['password'] = "EVXYRTcr";
-$db['production']['database'] = "codeigniter-demo";
+$db['production']['username'] = "hollis";
+$db['production']['password'] = "oOAHGcPn";
+$db['production']['database'] = "db3";
 $db['production']['dbdriver'] = "mysql";
 $db['production']['dbprefix'] = "";
 $db['production']['active_r'] = TRUE;
