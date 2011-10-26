@@ -39,6 +39,8 @@ if (isset($_SERVER['ENVIRONMENT']) && $_SERVER['ENVIRONMENT'] == 'PAGODA')
 else
     define('SITE', 'development');
 
+echo SITE;
+exit;
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
