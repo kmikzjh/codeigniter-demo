@@ -89,6 +89,9 @@ $db['production']['cachedir'] = "";
 $db['production']['char_set'] = "utf8";
 $db['production']['dbcollat'] = "utf8_general_ci";
 
+print_r ($db['production']);
+exit;
+
 // development
 $db['development']['hostname'] = "localhost";
 $db['development']['username'] = "root";
