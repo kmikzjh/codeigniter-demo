@@ -108,6 +108,7 @@ $db['development']['cachedir'] = "";
 $db['development']['char_set'] = "utf8";
 $db['development']['dbcollat'] = "utf8_general_ci";
 
+echo $db[SITE]['hostname'];
 // Check the configuration group in use exists, if not use the production
 $active_group = (defined('SITE') && array_key_exists(SITE, $db)) ? SITE : 'production';
 
