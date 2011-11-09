@@ -78,7 +78,7 @@ else
 $active_record = TRUE;
 
 // production
-$db['production']['hostname'] = "tunnel.pagodabox.com";
+$db['production']['hostname'] = "tunnel.pagodabox.com:3306";
 $db['production']['username'] = "hollis";
 $db['production']['password'] = "oOAHGcPn";
 $db['production']['database'] = "db3";
