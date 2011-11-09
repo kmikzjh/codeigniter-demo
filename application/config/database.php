@@ -78,10 +78,11 @@ else
 $active_record = TRUE;
 
 // production
-$db['production']['hostname'] = "tunnel.pagodabox.com:3308";
+$db['production']['hostname'] = "tunnel.pagodabox.com";
 $db['production']['username'] = "hollis";
 $db['production']['password'] = "oOAHGcPn";
 $db['production']['database'] = "db3";
+$db['production']['port']     = "3308"
 $db['production']['dbdriver'] = "mysql";
 $db['production']['dbprefix'] = "";
 $db['production']['active_r'] = TRUE;
