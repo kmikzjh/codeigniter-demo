@@ -5,3 +5,4 @@ web1:
       - application/logs
   php_extensions:
       - mysqli
+      - mysql
