@@ -74,13 +74,13 @@ else
 $active_record = TRUE;
 
 // production
-$db['production']['hostname'] = "localhost:/tmp/mysql/tanja.sock";
-$db['production']['username'] = "akilah";
-$db['production']['password'] = "u91EayUR";
-$db['production']['database'] = "tanja";
+$db['production']['hostname'] = "tunnel.pagodabox.com";
+$db['production']['username'] = "hollis";
+$db['production']['password'] = "oOAHGcPn";
+$db['production']['database'] = "db3";
 $db['production']['dbdriver'] = "mysql";
 $db['production']['dbprefix'] = "";
-$db['production``']['active_r'] = TRUE;
+$db['production']['active_r'] = TRUE;
 $db['production']['pconnect'] = TRUE;
 $db['production']['db_debug'] = TRUE;
 $db['production']['cache_on'] = FALSE;
