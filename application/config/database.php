@@ -35,9 +35,13 @@ else
 */
 
 if (isset($_SERVER['ENVIRONMENT']) && $_SERVER['ENVIRONMENT'] == 'PAGODA')
+{
     define('SITE', 'production');
+}
 else
+{
     define('SITE', 'development');
+}
 
 /*
 | -------------------------------------------------------------------
@@ -91,7 +95,7 @@ $db['production']['dbcollat'] = "utf8_general_ci";
 // development
 $db['development']['hostname'] = "localhost";
 $db['development']['username'] = "root";
-$db['development']['password'] = "root";
+$db['development']['password'] = "";
 $db['development']['database'] = "codeignitor-demo";
 $db['development']['dbdriver'] = "mysql";
 $db['development']['dbprefix'] = "";
