@@ -19,7 +19,6 @@ if(isset($_SERVER['HTTP_HOST']))
     $config['base_url'] = isset($_SERVER['HTTPS']) && strtolower($_SERVER['HTTPS']) == 'on' ? 'https' : 'http';
     $config['base_url'] .= '://'. $_SERVER['HTTP_HOST'];
     $config['base_url'] .= str_replace(basename($_SERVER['SCRIPT_NAME']), '', $_SERVER['SCRIPT_NAME']);
-	echo $config['base_url'];
 }
 
 else
@@ -109,7 +108,6 @@ $db['development']['cachedir'] = "";
 $db['development']['char_set'] = "utf8";
 $db['development']['dbcollat'] = "utf8_general_ci";
 
-echo $db[SITE]['hostname'];
 // Check the configuration group in use exists, if not use the production
 $active_group = (defined('SITE') && array_key_exists(SITE, $db)) ? SITE : 'production';
 
