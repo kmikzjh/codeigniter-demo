@@ -17,8 +17,25 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  *
- */
-	define('ENVIRONMENT', 'development');
+ */ 
+
+// Switch environment based on global var
+if (isset($_SERVER['ENVIRONMENT']))
+{
+    switch ($_SERVER['ENVIRONMENT']) {
+
+        case 'PAGODA':
+            define('ENVIRONMENT', 'production');
+        break;
+    // add additional cases for more environments
+    }
+}
+else
+{
+    define('ENVIRONMENT', 'development');
+}
+
+	
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
