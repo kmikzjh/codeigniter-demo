@@ -44,6 +44,7 @@ $db['production']['hostname'] = "tunnel.pagodabox.com";
 $db['production']['username'] = "hollis";
 $db['production']['password'] = "oOAHGcPn";
 $db['production']['database'] = "db3";
+$db['production']['port']     = "3308";
 $db['production']['dbdriver'] = "mysql";
 $db['production']['dbprefix'] = "";
 $db['production']['pconnect'] = TRUE;
@@ -59,7 +60,7 @@ $db['production']['stricton'] = FALSE;
 // production
 $db['development']['hostname'] = "localhost";
 $db['development']['username'] = "root";
-$db['development']['password'] = "root";
+$db['development']['password'] = "";
 $db['development']['database'] = "codeignitor-demo";
 $db['development']['dbdriver'] = "mysql";
 $db['development']['dbprefix'] = "";

@@ -1,7 +1,8 @@
 web1:
   name: codeigniter
-  network_writable_dirs: 
+  shared_writable_dirs: 
       - application/cache
       - application/logs
   php_extensions:
       - mysqli
+      - mysql
