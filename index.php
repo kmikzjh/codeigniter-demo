@@ -18,11 +18,10 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */ 
-
 // Switch environment based on global var
-if (isset($_SERVER['ENVIRONMENT']))
+if (isset($_SERVER['PLATFORM']))
 {
-    switch ($_SERVER['ENVIRONMENT']) {
+    switch ($_SERVER['PLATFORM']) {
 
         case 'PAGODA':
             define('ENVIRONMENT', 'production');
@@ -35,7 +34,6 @@ else
     define('ENVIRONMENT', 'development');
 }
 
-	
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
